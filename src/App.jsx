@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css'
-import Navbar from './componentes/Navbar';
-import Form from './componentes/Form';
+import Navbar from './Navbar';
+import Card from './components/Card';
 
 
 const App = () => {
   return (
     <>
       <Navbar/>
-      <Form busqueda="Buscar usuario"/>
+      <Card/>
+
+      
 
     </>
   );

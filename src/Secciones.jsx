@@ -5,18 +5,18 @@ const Secciones = () => {
         <>
             <li className="nav-item">
                 <a className="nav-link active" href="#">
-                  Home
+                  PIMP LUXURY
                   <span className="visually-hidden">(current)</span>
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Features
+                  Custom
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Pricing
+                  Contacto
                 </a>
               </li>
               <li className="nav-item">
