@@ -1,4 +1,5 @@
 import React from 'react';
+import CartWidget from './components/CartWidget';
 
 const Secciones = () => {
     return (
@@ -7,6 +8,7 @@ const Secciones = () => {
                 <a className="nav-link active" href="#">
                   PIMP LUXURY
                   <span className="visually-hidden">(current)</span>
+          
                 </a>
               </li>
               <li className="nav-item">

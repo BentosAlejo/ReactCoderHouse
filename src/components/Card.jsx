@@ -1,5 +1,5 @@
 import React from 'react';
-import Components from '../Card-components.jsx/components';
+import Components from '../Card-components/components';
 
 const Card = () => {
     return (
