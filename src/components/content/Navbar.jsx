@@ -1,6 +1,6 @@
 import React from 'react';
-import Form from './Form';
-import ItemListContainer from './components/ItemListContainer';
+import Form from '../layouts/Form';
+import ItemListContainer from '../ItemListContainer';
 
 const Navbar = () => {
    

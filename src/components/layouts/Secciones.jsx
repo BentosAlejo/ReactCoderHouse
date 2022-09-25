@@ -1,5 +1,5 @@
 import React from 'react';
-import CartWidget from './components/CartWidget';
+import CartWidget from '../CartWidget';
 
 const Secciones = () => {
     return (

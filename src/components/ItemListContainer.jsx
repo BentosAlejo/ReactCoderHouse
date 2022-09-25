@@ -1,7 +1,7 @@
 import React from 'react';
-import Dropdown from './Dropdown';
+import Dropdown from './layouts/Dropdown';
 import CartWidget from './CartWidget';
-import Secciones from '../Secciones'
+import Secciones from './layouts/Secciones'
 
 const ItemListContainer = ({greetings}) => {
     const listDropdown = ["Chains", "Anillos", "Pulseras", "Aritos", "Grills", "Dijes"]
