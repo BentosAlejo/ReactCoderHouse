@@ -29,16 +29,44 @@
 }
 #pic4{
   background-image: url(../media/chain-god-1.jpg);
-  height: 30rem;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  height: 30rem;
+  
 }
 #pic5{
   background-image: url(../media/chain-god-2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 30rem;
 }
 #pic6{
   background-image: url(../media/chain-god-3.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30rem;
+}
+#pic7{
+  background-image: url(../media/pulsera-ice-plata-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30rem;
+}
+#pic8{
+  background-image: url(../media/pulsera-ice-plata-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30rem;
+}
+#pic9{
+  background-image: url(../media/pulcera-ice-plata-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 30rem;
 }

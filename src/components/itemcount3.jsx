@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const Itemcount2 = () => {
+const Itemcount3 = () => {
     const [contador, setContador] = useState(1)
     function modificarContador(operacion){
         if(operacion == "+"){
@@ -13,7 +13,7 @@ const Itemcount2 = () => {
     }
     return (
         <div className="card border-secondary mb-3" style={{ maxWidth: "20rem" }}>
-            <div className="card-header">Chain de dios</div>
+            <div className="card-header">Pulcera  Ice</div>
             <div className="card-body">
                 <p>Cantidad</p>    
                 <button className='btn' onClick={() =>{modificarContador("-")}}>-</button>
@@ -24,4 +24,4 @@ const Itemcount2 = () => {
     );
 }
 
-export default Itemcount2;
+export default Itemcount3;
