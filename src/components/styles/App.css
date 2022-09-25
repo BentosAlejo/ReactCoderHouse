@@ -8,4 +8,37 @@
   height: 10rem;
   background-position: top;
 }
-
+#pic1{
+  background-image: url(../media/anillo-rey-oro-1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30rem;
+}
+#pic2{
+  background-image: url(../media/anillo-rey-oro2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30rem;
+}
+#pic3{
+  background-image: url(../media/anillo-rey-oro-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30rem;
+}
+#pic4{
+  background-image: url(../media/chain-god-1.jpg);
+  height: 30rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#pic5{
+  background-image: url(../media/chain-god-2.jpg);
+  height: 30rem;
+}
+#pic6{
+  background-image: url(../media/chain-god-3.jpg);
+  height: 30rem;
+}

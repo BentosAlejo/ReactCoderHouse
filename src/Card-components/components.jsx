@@ -6,14 +6,14 @@ const Components = () => {
         <>
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img src="../media/anillo-rey-oro-1.jpg" className="d-block w-100" alt="anillo1" />
+                    <div className="carousel-item active" id='pic1'>
+                       <img src="" alt="" />
                     </div>
                     <div className="carousel-item">
-                        <img src="..." className="d-block w-100" alt="anillo2" />
+                        <img src="..." className="d-block w-100 " alt="anillo2" id='pic2'/>
                     </div>
                     <div className="carousel-item">
-                        <img src="..." className="d-block w-100" alt="anillo3" />
+                        <img src="..." className="d-block w-100" alt="anillo3" id='pic3'/>
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
