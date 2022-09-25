@@ -12,7 +12,6 @@ const App = () => {
     <>
       <Navbar/>
       <Card/>
-      <Prueba/>
       <ItemCount/>
 
       

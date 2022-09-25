@@ -1,14 +1,13 @@
 import React from 'react';
-import CartWidget from '../CartWidget';
+
 
 const Secciones = () => {
     return (
         <>
             <li className="nav-item">
+                <div id='divPic'></div>
                 <a className="nav-link active" href="#">
                   PIMP LUXURY
-                  <span className="visually-hidden">(current)</span>
-          
                 </a>
               </li>
               <li className="nav-item">
