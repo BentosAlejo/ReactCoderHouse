@@ -70,3 +70,45 @@
   background-size: contain;
   height: 30rem;
 }
+#pic10{
+  background-image: url(../media/cadena-dios-plata.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30rem;
+}
+#pic11{
+  background-image: url(../media/cadena-dios-plata-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30rem;
+}
+#pic12{
+  background-image: url(../media/cadena-dios-plata-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30rem;
+}
+#pic13{
+  background-image: url(../media/anillo-del-rey-plata.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30rem;
+}
+#pic14{
+  background-image: url(../media/anillo-del-rey-plata-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30rem;
+}
+#pic15{
+  background-image: url(../media/anillo-del-rey-plata-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30rem;
+}
