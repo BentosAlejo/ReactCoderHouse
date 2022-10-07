@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import Producto from '../content/Producto';
+
 
 const ItemCount = () => {
     const [contador, setContador] = useState(1)
@@ -16,11 +18,10 @@ const ItemCount = () => {
             
                
                 <div className="card border-secondary mb-3" style={{ maxWidth: "20rem" }}>
-                    <div className="card-header">Anillo del Rey</div>
                     <div className="card-body">
                     <p>Cantidad</p>    
                     <button className='btn' onClick={() =>{modificarContador("-")}}>-</button>
-                    <button class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">{contador}</button>
+                    <button className="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">{contador}</button>
                     <button className='btn' onClick={() =>{modificarContador("+")}}>+</button>
                     </div>
                 </div>

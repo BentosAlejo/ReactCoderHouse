@@ -1,29 +1,28 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
+import Dropdown from './Dropdown';
+
 
 
 const Secciones = () => {
+  const listDropdown = ["Chains", "Anillos", "Pulceras", "Grillz", "Aritos"]
     return (
         <>
-            <li className="nav-item">
+              <li className="nav-item">
                 <div id='divPic'></div>
-                <a className="nav-link active" href="#">
-                  PIMP LUXURY
-                </a>
+                <h1 className="nav-link active">PIMP LUXURY</h1>
+              </li>
+              <li>
+                <Link className="nav-link mt-5 mx-5" to="/"><button className='btn btn-dark'><i className="fa-solid fa-house"></i></button></Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Custom
-                </a>
+                <Link className="nav-link mt-5 mx-5" to="/contacto"><button className='btn btn-dark'><i className="fa-solid fa-phone"></i></button></Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Contacto
-                </a>
+                <Link className="nav-link mt-5 mx-5" to="/About"><button className='btn btn-dark'><i className="fa-solid fa-people-roof"></i></button></Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  About
-                </a>
+              <li>
+                <Dropdown lista = {listDropdown}/>
               </li>
         </>
     );

@@ -10,7 +10,7 @@ const ItemListContainer = ({greetings}) => {
         
             <ul className="navbar-nav me-auto">
               <Secciones/>
-              <Dropdown lista={listDropdown}/>
+              
               <CartWidget mensaje={greetings}/>
               <li>
                 mensaje :{greetings}

@@ -1,22 +1,28 @@
 import React from 'react';
-import Components2 from '../Card-components/components2';
-import Table2 from './table2';
+import Components from '../../Card-components/components';
+import Table from '../Tables/table';
 
-const Card2 = () => {
+const Card = () => {
     return (
+        <>
+            
             <div className="card mb-3">
-                <h1>Chain de dios</h1>
+                <h1></h1>
                 <div className="card-body">
-                <h5 className="card-title">Oro</h5>
+                <h5 className="card-title"></h5>
                 </div>
-                <Components2/>
-                <Table2/>
+                <Components/>
+                <Table/>
                 <div className="card-body">
                 <a href="#" className="card-link">Comprar ahora</a>
                 <a href="#" className="card-link">Agregar al carrito</a>
                 </div>
             </div>
+  
+        </>
+
+        
     );
 }
 
-export default Card2;
+export default Card;

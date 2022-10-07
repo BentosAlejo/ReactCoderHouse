@@ -3,112 +3,21 @@
   color: crimson;
 }
 #divPic{
-  background-image: url(../media/duki\ \(1\).jpg);
+  background-image: url(../../../public/media/duki\ \(1\).jpg);
   width: 10rem;
   height: 10rem;
   background-position: top;
 }
-#pic1{
-  background-image: url(../media/anillo-rey-oro-1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 30rem;
+.cardProducto{
+  width: 18rem;
+  margin: 4px;
 }
-#pic2{
-  background-image: url(../media/anillo-rey-oro2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 30rem;
+.pic{
+  width: 40rem;
+  height: 40rem;
+  margin: auto;
 }
-#pic3{
-  background-image: url(../media/anillo-rey-oro-3.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 30rem;
-}
-#pic4{
-  background-image: url(../media/chain-god-1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 30rem;
-  
-}
-#pic5{
-  background-image: url(../media/chain-god-2.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 30rem;
-}
-#pic6{
-  background-image: url(../media/chain-god-3.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 30rem;
-}
-#pic7{
-  background-image: url(../media/pulsera-ice-plata-1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 30rem;
-}
-#pic8{
-  background-image: url(../media/pulsera-ice-plata-2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 30rem;
-}
-#pic9{
-  background-image: url(../media/pulcera-ice-plata-3.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 30rem;
-}
-#pic10{
-  background-image: url(../media/cadena-dios-plata.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 30rem;
-}
-#pic11{
-  background-image: url(../media/cadena-dios-plata-2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 30rem;
-}
-#pic12{
-  background-image: url(../media/cadena-dios-plata-3.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 30rem;
-}
-#pic13{
-  background-image: url(../media/anillo-del-rey-plata.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 30rem;
-}
-#pic14{
-  background-image: url(../media/anillo-del-rey-plata-2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 30rem;
-}
-#pic15{
-  background-image: url(../media/anillo-del-rey-plata-3.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 30rem;
-}
+/* .carousel-item{
+  justify-content: center;
+  align-items: center;
+} */

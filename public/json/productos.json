@@ -1,0 +1,12 @@
+[
+    {"id":1, "nombreCategoria":"Chains", "nombre":"Chain de Dios", "material":"Oro", "precio": 1370000, "cuotas":"3 cuotas sin interes de $456.666,667" , "img1":"chain-god-1.jpg", "img2":"chain-god-2.jpg", "img3":"chain-god-3.jpg"},
+    {"id":2, "nombreCategoria":"Chains", "nombre":"Chain de Dios", "material":"Plata", "precio": 80000, "cuotas":"6 cuotas de $15.833,333" , "img1":"cadena-dios-plata.jpg", "img2":"cadena-dios-plata-2.jpg", "img3":"cadena-dios-plata-3.jpg"},
+    {"id":3, "nombreCategoria":"Anillos", "nombre":"Anillo del Rey", "material":"Oro", "precio": 350000, "cuotas":"3 cuotas sin interes de $116.666,667" ,"img1":"anillo-rey-oro-1.jpg", "img2":"anillo-rey-oro2.jpg", "img3":"anillo-rey-oro-3.jpg"},
+    {"id":4, "nombreCategoria":"Anillos", "nombre":"Anillo del Rey", "material":"Plata", "precio": 35000, "cuotas":"6 cuotas de $8.333" , "img1":"anillo-del-rey-plata.jpg", "img2":"anillo-del-rey-plata-2.jpg", "img3":"anillo-del-rey-plata-3.jpg"},
+    {"id":5, "nombreCategoria":"Pulceras", "nombre":"Pulcera Ice", "material":"Oro", "precio": 400000, "cuotas":"3 cuotas sin interes de $133.333,333" , "img1":"pulcera-ice-oro.jpg", "img2":"pulceraIceOro2.jpg", "img3":"pulceraiceoro3.jpg"},
+    {"id":6, "nombreCategoria":"Pulceras", "nombre":"Pulcera Ice", "material":"Plata", "precio": 38000, "cuotas":"6 cuotas de $8.333" , "img1":"pulsera-ice-plata-1.jpg", "img2":"pulcera-ice-plata-3.jpg", "img3":"pulsera-ice-plata-2.jpg"},
+    {"id":7, "nombreCategoria":"Grillz", "nombre":"Grills", "material":"Oro", "precio": 26000, "cuotas":"Precio por diente" , "img1":"dientes-de-oro.jpg", "img2":"dentadura-de-oro.jpg", "img3":"coronas-de-oro.jpg"},
+    {"id":8, "nombreCategoria":"Grillz", "nombre":"Grills", "material":"Cromo", "precio": 8000, "cuotas":"Precio por diente" , "img1":"grillz-oro-plata.jpg", "img2":"diente-de-cromo.jpg", "img3":"cromo.jpg"},
+    {"id":9, "nombreCategoria":"Aritos", "nombre":"Aritos", "material":"Oro", "precio": 180000, "cuotas":"3 cuotas sin interes de $60.000" , "img1":"aritos-oro.jpg", "img2":"oro-rouch.jpg", "img3":"ororouch3.jpg"},
+    {"id":10, "nombreCategoria":"Aritos", "nombre":"Aritos", "material":"Vermeil", "precio": 40000, "cuotas":"6 cuotas de $8400" , "img1":"aritos-vermeil.jpg", "img2":"dijerr.jpg", "img3":"dijesss.jpg"}
+]

@@ -1,19 +1,28 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
+
 
 const Dropdown = ({lista}) => {
+    
     return (
-        <>
+        <>  
+            
+            <Link className='nav-link' to={"/categoria/"}>Ver Productos</Link>
             <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
-                <div className="dropdown-menu">
-                  <a className="dropdown-item" href="#">{lista[0]}</a>
-                  <a className="dropdown-item" href="#">{lista[1]}</a>
-                  <a className="dropdown-item" href="#">{lista[2]}</a>
-                  <a className="dropdown-item" href="#">{lista[3]}</a>
-                  <a className="dropdown-item" href="#">{lista[4]}</a>
-                  <a className="dropdown-item" href="#">{lista[5]}</a>
-                </div>
+                    
+                            <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i className="fa-solid fa-circle-caret-down"></i></a>
+                           
+                            <div className="dropdown-menu">
+                             
+                            {lista.map(e => (
+                                    <Link key={e} className='dropdown-item' to={`/categoria/${e}`}>{e}</Link>
+                                    
+                                    ))}
+                   
+                            </div>
             </li>
+
+            
         </>
     );
 }

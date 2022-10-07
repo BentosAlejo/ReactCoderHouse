@@ -10,7 +10,7 @@ const Components = () => {
                        <img src="" alt="" />
                     </div>
                     <div className="carousel-item">
-                        <img src="..." className="d-block w-100 " alt="anillo2" id='pic2'/>
+                        <img src="..." className="d-block w-100 h-100" alt="anillo2" id='pic2'/>
                     </div>
                     <div className="carousel-item">
                         <img src="..." className="d-block w-100" alt="anillo3" id='pic3'/>

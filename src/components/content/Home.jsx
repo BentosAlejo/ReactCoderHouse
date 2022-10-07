@@ -1,29 +1,38 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import { consultarBDD } from '../utils/funcionesUtiles';
+import {Link} from 'react-router-dom'
+
 
 const Home = () => {
-    const productos = [
+    const [productos, setProductos] = useState([])
+    useEffect(() => {
+        consultarBDD('./json/productos.json').then(productos => {
+            setProductos(productos)
+    })
+           
+        
+       
+    }, []);
 
-        {id:1, nombre:"Oro", marca:"420", precio:700, stock:22},
-        {id:1, nombre:"Plata", marca:"18", precio:500, stock:22},
-        {id:1, nombre:"Cobalto", marca:"SV", precio:230, stock:22},
-        {id:1, nombre:"Diamante", marca:"GL", precio:900, stock:22},
-        {id:1, nombre:"Vermeil", marca:"DR", precio:250, stock:22}
-
-    ]
-    const consultaBDD = (habilitado) => {
-        return new Promise((resolve,reject) =>{
-            if(habilitado){
-                resolve(productos)
-            }else{
-                reject("No habilitado")
-            }
-        })
-    }
-    consultaBDD(true).then(data => console.log(data))
     return (
-        <>
-        </>
+        <div className='row'>
+             {productos.map(producto => {
+                return(
+                            <div className="card cardProducto animate__animated animate__backInDown" key={producto.id}>
+                               <img src={"./media/" + producto.img1} className="card-img-top" alt={producto.nombre} />
+                                <div className="card-body">
+                                    <h5 className="card-title">{producto.nombre}</h5>
+                                    <p className="card-text">{producto.material}</p>
+                                    <p className="card-text">{producto.precio}</p>
+                                    <p className="card-text">{producto.cuotas}</p>
+                                    <button className="btn btn-dark"><Link className='nav-link' to={"/producto/" + producto.id}>Ver Producto</Link></button>
+                                </div>
+                            </div>)})}
+                           
+        </div>
     );
 }
+    
+    export default Home;
 
-export default Home;
+
