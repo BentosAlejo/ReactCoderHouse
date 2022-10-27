@@ -7,10 +7,10 @@ const Dropdown = ({lista}) => {
     return (
         <>  
             
-            <Link className='nav-link' to={"/categoria/"}>Ver Productos</Link>
-            <li className="nav-item dropdown">
+           
+            <li className="nav-item dropdown ">
                     
-                            <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i className="fa-solid fa-circle-caret-down"></i></a>
+                            <a className="nav-link dropdown-toggle btn btn-dark" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i className="fa-solid fa-circle-caret-down"></i></a>
                            
                             <div className="dropdown-menu">
                              

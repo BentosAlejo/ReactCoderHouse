@@ -1,32 +1,39 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import { useParams } from 'react-router-dom'
-import ItemCount from '../ItemCounts/ItemCount';
-import Buttons from '../layouts/Buttons';
-import Compras from '../layouts/compras';
-import { consultarBDD } from '../utils/funcionesUtiles';
 import DetalleProducto from './DetalleProducto';
+import { DarkModeContext } from '../../context/darkModeContext';
+import { getProducto } from '../utils/firebase';
 
 
 
 const Producto = () => {
     const [producto, setProducto] = useState([])
     const {id} = useParams()
+    const {darkMode} = useContext(DarkModeContext);
     useEffect(() => {
-        fetch('../json/productos.json')
-        .then(response => response.json())
-        .then(productos => {
-            const producto1 = productos.find(productoArray => productoArray.id == id)
-            setProducto(producto1)
+        getProducto(id).then(prod => {
+            setProducto([prod.id, prod.data()])
         })
-    })
-    return (
-        <>
-            <div className="card mb-3">
-                <DetalleProducto producto={producto}/>
-            </div>
-            <ItemCount/>
-        </>
-    );
+        })
+   
+
+        if(producto.length != 0){
+
+            return (
+                <>
+                    <div className={darkMode ? 'darkMode card mb-3' : 'card mb-3'}>
+                        
+                         { <DetalleProducto producto={producto}/> }
+                    </div>
+                </>
+            );
+
+
+        }
 }
 
 export default Producto;
+
+// .then(productos => {
+//     const producto1 = productos.find(productoArray => productoArray.id == id)
+//     setProducto(producto1)

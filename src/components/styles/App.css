@@ -21,3 +21,8 @@
   justify-content: center;
   align-items: center;
 } */
+.darkMode{
+  background-color: black;
+  color: antiquewhite;
+}
+

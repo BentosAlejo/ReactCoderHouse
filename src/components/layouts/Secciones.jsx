@@ -1,3 +1,4 @@
+import {memo} from 'react'
 import React from 'react';
 import {Link} from 'react-router-dom'
 import Dropdown from './Dropdown';
@@ -7,7 +8,8 @@ import Dropdown from './Dropdown';
 const Secciones = () => {
   const listDropdown = ["Chains", "Anillos", "Pulceras", "Grillz", "Aritos"]
     return (
-        <>
+        <>  
+
               <li className="nav-item">
                 <div id='divPic'></div>
                 <h1 className="nav-link active">PIMP LUXURY</h1>
@@ -25,7 +27,8 @@ const Secciones = () => {
                 <Dropdown lista = {listDropdown}/>
               </li>
         </>
+            
     );
 }
 
-export default Secciones;
+export default memo(Secciones);
