@@ -26,7 +26,7 @@ const CarritoProvider = (props) => {
         let indice = aux.findIndex(producto => producto.id == prod.id)
 
         aux.splice(indice, 1)
-        setCarrito(structuredClone(aux))
+        setCarrito(structuredClone)
         console.log(carrito)
 
     }

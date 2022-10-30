@@ -1,5 +1,4 @@
 import React from 'react';
-import Dropdown from './layouts/Dropdown';
 import CartWidget from './CartWidget';
 import Secciones from './layouts/Secciones'
 
@@ -13,7 +12,7 @@ const ItemListContainer = ({greetings}) => {
               
               <CartWidget mensaje={greetings}/>
               <li>
-                mensaje :{greetings}
+                {greetings}
               </li>
             
             </ul>

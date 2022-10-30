@@ -24,7 +24,10 @@ const Secciones = () => {
                 <Link className="nav-link mt-5 mx-5" to="/About"><button className='btn btn-dark'><i className="fa-solid fa-people-roof"></i></button></Link>
               </li>
               <li>
-                <Dropdown lista = {listDropdown}/>
+                <Link className='nav-link mt-5 mx-5'><Dropdown lista = {listDropdown}/></Link>
+              </li>
+              <li>
+                <Link className="nav-link mt-5 mx-5" to="/carrito"><button className='btn btn-dark'><i className="fa-solid fa-cart-shopping"></i></button></Link>
               </li>
         </>
             

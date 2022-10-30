@@ -29,7 +29,7 @@ const DetalleProducto = ({producto}) => {
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active" >
-                        <img src={producto[1].img1} alt={producto.nombre} className="pic"/>
+                        <img src={producto[1].img1} alt={producto[1].nombre} className="pic"/>
                     </div>
                     <div className="carousel-item">
                         <img src={producto[1].img2} className="d-block pic" alt={producto[1].nombre} />

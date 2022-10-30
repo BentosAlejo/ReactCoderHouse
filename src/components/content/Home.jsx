@@ -4,9 +4,11 @@ import { DarkModeContext } from '../../context/darkModeContext';
 import {Link} from 'react-router-dom'
 
 
+
 const Home = () => {
     const [productos, setProductos] = useState([])
     const {darkMode} = useContext(DarkModeContext);
+  
     useEffect(() => {
            getProductos().then(prod => {
                
@@ -37,6 +39,7 @@ const Home = () => {
                             </div>)}) }
                            
         </div>
+       
        </>
     );
 }

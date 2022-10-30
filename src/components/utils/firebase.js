@@ -1,6 +1,6 @@
 
 import { initializeApp } from "firebase/app";
-import {collection, addDoc, getFirestore, getDocs, getDoc, doc } from 'firebase/firestore'
+import {collection, addDoc, getFirestore, getDocs, getDoc, doc, updateDoc, deleteDoc } from 'firebase/firestore'
 // "AIzaSyAKWTVyXMCCfLstblPDRiaLwZz6xTnG7mU"
 
 
@@ -40,6 +40,7 @@ const getProducto = async (id) => {
     const  producto = await getDoc(doc(db, "productos", id))
     return producto
 }
+
 const getProductos = async () => {
     const productos = await getDocs(collection(db, "productos"))
     const items = productos.docs.map(producto => [producto.id, producto.data()])
@@ -47,4 +48,48 @@ const getProductos = async () => {
     return items
 }
 
-export {cargarBaseDeDatos, getProductos, getProducto}
+const updateProducto = async (id, info) => {
+    const estado = await getDoc(doc(db, "productos", id), info)
+    return estado 
+}
+
+const deleteProducto = async(id) => {
+    const estado = await deleteDoc(doc(db, "productos", id))
+    return estado
+
+
+}
+
+const createProducto = async (objProd) => {
+    const estado = await addDoc(collection(db, "productos"), {
+            nombre: objProd.nombre,
+            material: objProd.material,
+            categoria: objProd.nombreCategoria,
+            stock: objProd.stock,
+            img1: objProd.img1,
+            img2: objProd.img2,
+            img3: objProd.img3,
+            precio: objProd.precio,
+            cuotas: objProd.cuotas,
+    })
+    return estado
+}
+const createOrdenCompra = async (preTotal, nombre, apellido, email, dni, direccion) => {
+    const ordenCompra = await addDoc(collection(db, "ordenCompra"), {
+        nombre: nombre,
+        apellido: apellido,
+        email: email,
+        dni: dni,
+        direccion: direccion,
+        precioTotal: preTotal
+    })
+    return ordenCompra
+}
+
+const getOrdenCompra = async (id) => {
+    const ordenCompra = await getDoc(doc(db, "ordenCompra", id))
+    return ordenCompra
+}
+
+
+export {cargarBaseDeDatos, getProductos, getProducto, updateProducto, deleteProducto, createProducto, createOrdenCompra, getOrdenCompra}

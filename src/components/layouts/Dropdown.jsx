@@ -14,10 +14,10 @@ const Dropdown = ({lista}) => {
                            
                             <div className="dropdown-menu">
                              
-                            {lista.map(e => (
-                                    <Link key={e} className='dropdown-item' to={`/categoria/${e}`}>{e}</Link>
-                                    
-                                    ))}
+                                {lista.map(e => (
+                                        <Link key={e} className='dropdown-item' to={`/categoria/${e}`}>{e}</Link>
+                                        
+                                        ))}
                    
                             </div>
             </li>
