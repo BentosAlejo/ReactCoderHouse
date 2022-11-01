@@ -14,7 +14,7 @@ const Categoria = () => {
     const {darkMode} = useContext(DarkModeContext);
     
     useEffect(() => {
-        consultarBDD('../json/productos.json').then(productos => {
+        getProductos().then(producto => {
             const productosCategoria = productos.filter(producto => producto.nombreCategoria == id)
             setProductos(productosCategoria)
             
@@ -30,13 +30,13 @@ const Categoria = () => {
             productos.map(producto => 
                 
                 <div className="card cardProducto animate__animated animate__pulse" key={producto[0]}>
-                <img src={producto.img1} className="card-img-top" alt={producto.nombre} />
+                <img src={producto[1].img1} className="card-img-top" alt={producto[1].nombre} />
                  <div className="card-body">
-                     <h5 className="card-title">{producto.nombre}</h5>
-                     <p className="card-text">{producto.material}</p>
-                     <p className="card-text">{producto.precio}</p>
-                     <p className="card-text">{producto.cuotas}</p>
-                     <button className="btn btn-dark"><Link className='nav-link' to={"/producto/" + producto.id}>Ver Producto</Link></button>
+                     <h5 className="card-title">{producto[1].nombre}</h5>
+                     <p className="card-text">{producto[1].material}</p>
+                     <p className="card-text">{producto[1].precio}</p>
+                     <p className="card-text">{producto[1].cuotas}</p>
+                     <button className="btn btn-dark"><Link className='nav-link' to={"/producto/" + producto[0]}>Ver Producto</Link></button>
                  </div>
                  </div>)
                  }

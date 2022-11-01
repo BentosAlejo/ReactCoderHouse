@@ -26,7 +26,7 @@ const Carrito = () => {
     }, [carrito])
 
 
-    const app =(carrito.length != 0) ?  <div className='row'> {carritoLocal} </div> : <> <h1>No existen elementos en el carrito</h1> <button><Link className='nav-link' to={"/Home.jsx"}>Home</Link></button></>
+    const app =(carrito.length != 0) ? <> <div className='row'> {carritoLocal} </div>  <li> <Link className="nav-link mt-5 mx-5" to="/"><button className='btn btn-dark'><i className="fa-solid fa-house"></i></button></Link></li> </>  : <> <h1>No existen elementos en el carrito</h1>  <li> <Link className="nav-link mt-5 mx-5" to="/"><button className='btn btn-dark'><i className="fa-solid fa-house"></i></button></Link> </li></>
         return app
 }
     
